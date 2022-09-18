@@ -24,7 +24,7 @@ t2=[0:10:100];
 vq5=interp1(t,y(:,1),t2);  % vq2为t2对应的值
 vq6=interp1(t,y(:,2),t2); 
 vq7=interp1(t,y(:,1)+y(:,3),t2); 
-vq8=interp1(t,y(:,1)+y(:,3),t2); 
+vq8=interp1(t,y(:,2)+y(:,4),t2); 
 figure(1);%浮子的垂荡位移
 plot(t,y(:,1),t2,vq5,'*');
 xlim([0,100]);
@@ -34,9 +34,9 @@ plot(t,y(:,2),t2,vq6,'*');
 xlim([0,100]);
 
 figure(3);%振子的垂荡位移
-plot(t,y(:,2),t2,vq6,'*');
+plot(t,y(:,2),t2,vq7,'*');
 xlim([0,100]);
 
 figure(4);%振子的垂荡速度
-plot(t,y(:,2),t2,vq6,'*');
+plot(t,y(:,2),t2,vq8,'*');
 xlim([0,100]);
